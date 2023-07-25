@@ -5,9 +5,11 @@ function chequearParametros(parametros) {
     
     if(tieneDosDigitos) {
         const parametroNumerico = Number(parametros[0]);
+        
         return parametroNumerico;
+        
     }
-
+    
     return tieneDosDigitos;
 }
 
@@ -20,6 +22,7 @@ function main() {
     } else {
         const resultado = obtenerProvinciasSegunMeridiano(parametroChequeado);
         console.log(resultado);
+        
     }
 }
 

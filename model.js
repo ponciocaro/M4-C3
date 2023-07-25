@@ -6,7 +6,8 @@ const db = jsonfile.readFileSync(PATH);
 // ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ COMPLETAR SOLO ESTA FUNCIÓN ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
 
 function obtenerProvinciasSegunMeridiano(meridiano) {
-
+    const provinciaEncontrada = db.provincias.find((provincia) => Math.trunc(provincia.centroide.lon) == - meridiano)
+    return provinciaEncontrada
     // COMPLETAR
 }
 
